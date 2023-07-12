@@ -10,11 +10,18 @@ class Player {
       x: 200,
       y: 200
     }
-    this.velocity = {
+    this.velocity = { //speed of the object
       x: 0,
-      y:0
+      y: 0
     }
-    
+    //this.image = 
+    this.width = 100
+    this.height = 100
+  }
+  draw(){
+    c.fillStyle = 'red'
+    c.fillRect(this.position.x, this.position.y, this.width, this.height, )
   }
 }
-
+const player = new Player();
+player.draw()
